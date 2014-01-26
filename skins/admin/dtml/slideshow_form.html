@@ -1,0 +1,53 @@
+<div class="admin-login-error">	
+		<[message::print_error library="admin_error"]>
+</div>
+<div class="awidget">
+
+	<div class="awidget-head">
+
+	</div>
+	<div class="awidget-body">
+		<!-- Page title -->
+
+		<br />
+
+		<form enctype="multipart/form-data" class="form-horizontal" role="form" action="<[action]>" method="post" autocomplete="off">
+
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">ID</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control"  name="id" value='<[val::filler value="slideshow" field="id" library="table_filler"]>' readOnly="true" placeholder="Id will be automatically assigned">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Title</label>
+				<div class="col-lg-5">
+					<input type="text" required class="form-control"  name="title" value='<[val::filler value="slideshow" field="title" library="table_filler"]>'  placeholder="insert slideshow title">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputComment" class="col-lg-2 control-label">Description</label>
+				<div class="col-lg-6">
+					<textarea class="form-control" rows="2" required  name="desc"  placeholder="Enter a description" ><[val::filler value="slideshow" field="description" library="table_filler"]></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Image</label>
+				<div class="col-lg-4">
+					<input type="file" required class="form-control"  name="uploaded_file" type="file" <[dis]>>
+					<[info]>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-offset-2 col-lg-10">
+					<button type="submit" class="btn btn-info">
+						<[button]>
+					</button>
+					<button type="reset" class="btn btn-default">
+						Reset
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<div class="awidget">
+
+	<div class="awidget-head">
+
+	</div>
+	<div class="awidget-body">
+		<!-- Page title -->
+
+		<br />
+		<form class="form-horizontal" role="form" action="<[action]>" method="post" autocomplete="off">
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">ID</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control"  name="id" value='<[val::filler value="newsletter" field="id" library="table_filler"]>' readOnly="true" placeholder="Id will be automatically assigned">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">email</label>
+				<div class="col-lg-5">
+					<input type="email" class="form-control"  name="email" value='<[val::filler value="newsletter" field="email" library="table_filler"]>'  placeholder="insert email" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-lg-offset-2 col-lg-10">
+					<button type="submit" class="btn btn-info">
+						<[button]>
+					</button>
+					<button type="reset" class="btn btn-default">
+						Reset
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

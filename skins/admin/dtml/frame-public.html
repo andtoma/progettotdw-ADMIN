@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title here -->
+		<title>Admin</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600italic,600' rel='stylesheet' type='text/css'>
+
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="skins/admin/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Animate css -->
+		<link href="skins/admin/css/animate.min.css" rel="stylesheet">
+		<!-- Gritter -->
+		<link href="skins/admin/css/jquery.gritter.css" rel="stylesheet">
+		<!-- Calendar -->
+		<link href="skins/admin/css/fullcalendar.css" rel="stylesheet">
+		<!-- Bootstrap toggable -->
+		<link href="skins/admin/css/bootstrap-switch.css" rel="stylesheet">
+		<!-- Date and Time picker -->
+		<link href="skins/admin/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<!-- Star rating -->
+		<link href="skins/admin/css/rateit.css" rel="stylesheet">
+		<!-- Star rating -->
+		<link href="skins/admin/css/jquery.cleditor.css" rel="stylesheet">
+		<!-- jQuery UI -->
+		<link href="skins/admin/css/jquery-ui.css" rel="stylesheet">
+		<!-- prettyPhoto -->
+		<link href="skins/admin/css/prettyPhoto.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="skins/admin/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="skins/admin/css/style.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+
+	<body>
+		<!-- Logo & Navigation starts -->
+
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<!-- Logo -->
+						<div class="logo">
+							<h1><a href="admin.php">Admin</a></h1>
+						</div>
+					</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<div class="navbar navbar-inverse" role="banner">
+							<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="logout.php?user=1"><b></b>Logout</b></a>
+
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logo & Navigation ends -->
+
+		<!-- Page content -->
+		<div class="page-content blocky">
+			<div class="container">
+
+				<div class="sidebar-dropdown">
+					<a href="#">MENU</a>
+				</div>
+				<div class="sidey">
+
+					<div class="side-cont">
+						<ul class="nav">
+							<!-- Main menu -->
+							<li>
+								<a href="admin.php"><i class="icon-home"></i> Dashboard</a>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Catalog Management <span class="caret pull-right"> </span> </a>
+								<!-- Sub menu -->
+								<ul>
+									<li>
+										<a href="admin.php?sel=1&op=1">Add Product</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=1&op=2">Edit/Delete Product </a>
+									<li>
+										<a href="admin.php?sel=1&op=3">Add Furnisher</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=1&op=4">Edit/Delete Furnisher</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=1&op=5">Set/Unset discount</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=1&op=6">Products availability</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=1&op=7">Add Product availability</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=1&op=8">Edit Product availability</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Users Management <span class="caret pull-right"> </span> </a>
+								<!-- Sub menu -->
+								<ul>
+									<li>
+										<a href="admin.php?sel=2&op=1">Add user</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=2&op=2">Edit/Delete User </a>
+									</li>
+									<li>
+										<a href="admin.php?sel=2&op=3">Ban user</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=2&op=4">Unban user</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#">Images management<span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=3&op=1">Add Slideshow image</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=3&op=2">Edit/delete Slideshow images info</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=3&op=3">Add Products images</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=3&op=4">Edit/Delete Product images info</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Orders management <span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=4&op=1">Processing</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=4&op=2">Shipped</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Posts management<span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=5&op=1">Make post</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=5&op=2">Edit/Delete post </a>
+									</li>
+
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Privileges <span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=6&op=1">See services</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=6&op=2">Add group</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=6&op=3">Edit/Delete groups</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=6&op=4">Add service to group</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=6&op=5">Remove service from group</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=6&op=6">Add user into group</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=6&op=7">Remove user from group</a>
+									</li>
+
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Newsletter <span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=7&op=1">Add email</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=7&op=2">Edit/Delete email</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="has_submenu">
+								<a href="#"> Contact Requests<span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=8&op=1">Unread contacts requests</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=8&op=2">Read contacts requests</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has_submenu">
+								<a href="#"> Menu<span class="caret pull-right"> </span> </a>
+								<ul>
+									<li>
+										<a href="admin.php?sel=9&op=1">Add element to menu</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=9&op=2">Edit/Delete element from menu</a>
+									</li>
+									<li>
+										<a href="admin.php?sel=9&op=3">Swap items position</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="admin.php?sel=10">Site info</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mainy">
+					<!-- Page title -->
+					<div class="page-title">
+						<h2><i class="icon-desktop color"></i> <[title]> <small><[subtitle]></small></h2>
+						<hr />
+					</div>
+					<!-- Page title -->
+
+					<[content]>
+
+					<div class="clearfix"></div>
+
+				</div>
+			</div>
+
+			<!-- Admin hero. Peity bar plugin used -->
+
+		</div>
+
+		<div class="clearfix"></div>
+
+		</div>
+		</div>
+
+		<!-- Footer starts -->
+		<footer>
+				<div class="copy text-center">
+					&copy; Progetto Tecnologie Del Web - <a href="https://github.com/andtoma/progettotdw-ADMIN">Git Repository</a>
+					<div class="social">
+						<a href="https://github.com/andtoma/progettotdw-ADMIN" class="github"><i class="icon-github"></i></a>
+					</div>
+				</div>
+
+		</footer>
+		<!-- Footer ends -->
+
+		<!-- Scroll to top -->
+		<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+		<!-- Javascript files -->
+
+		<!-- jQuery -->
+		<script src="skins/admin/js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="skins/admin/js/bootstrap.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="skins/admin/js/jquery-ui.custom.min.js"></script>
+		<!-- jQuery Peity -->
+		<script src="skins/admin/js/peity.js"></script>
+		<!-- Calendar -->
+		<script src="skins/admin/js/fullcalendar.min.js"></script>
+		<script src="skins/admin/js/gcal.js"></script>
+		<!-- jQuery Star rating -->
+		<script src="skins/admin/js/jquery.rateit.min.js"></script>
+		<!-- prettyPhoto -->
+		<script src="skins/admin/js/jquery.prettyPhoto.js"></script>
+		<!-- it contains the ajax calls  -->
+		<script src="skins/admin/js/ajaxFunc.js"></script><!-- <---------------AJAX HERE-->
+
+		<!-- jQuery flot -->
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="skins/admin/js/excanvas.min.js"></script><![endif]-->
+		<script src="skins/admin/js/jquery.flot.js"></script>
+		<script src="skins/admin/js/jquery.flot.pie.js"></script>
+		<script src="skins/admin/js/jquery.flot.stack.js"></script>
+		<script src="skins/admin/js/jquery.flot.resize.js"></script>
+		<script src="skins/admin/js/bootstrap-formhelpers.js"></script>
+
+		<!-- Gritter plugin -->
+		<script src="skins/admin/js/jquery.gritter.min.js"></script>
+		<!-- CLEditor -->
+		<script src="skins/admin/js/jquery.cleditor.min.js"></script>
+		<!-- Date and Time picker -->
+		<script src="skins/admin/js/bootstrap-datetimepicker.min.js"></script>
+		<!-- jQuery Toggable -->
+		<script src="skins/admin/js/bootstrap-switch.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="skins/admin/js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="skins/admin/js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="skins/admin/js/custom.js"></script>
+ 
+
+	</body>
+</html>

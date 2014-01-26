@@ -1,0 +1,81 @@
+<div class="awidget">
+	<div class="awidget-head">
+
+	</div>
+	<div class="awidget-body">
+		<!-- Page title -->
+		<br />
+		<form class="form-horizontal" role="form" action="<[action]>" method="post" autocomplete="off">
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">ID</label>
+				<div class="col-lg-3">
+					<input type="text" class="form-control"  name="id" value='<[val::filler value="user" field="id" library="table_filler"]>' readOnly="true" placeholder="automatically assigned">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Surname</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control" name="surname" id="inputName" placeholder="Enter Surname" value='<[val::filler value="user" field="surname" library="table_filler"]>' required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Name</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control" name="name" id="inputName" placeholder="Enter Name" value='<[val::filler value="user" field="name" library="table_filler"]>' required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 control-label">Gender</label>
+				<div class="col-lg-10">
+					<div class="radio">
+						<label>
+							<input type="radio" required  name="sex" id="optionsRadios1" value="M" <[val::filler value="user" field="sex" gender="M" library="table_filler"]>  >
+							Male </label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio"  name="sex" id="optionsRadios2" value="F"  <[val::filler value="user" field="sex" gender="F" library="table_filler"]> >
+							Female </label>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Birth Date</label>
+				<div class="col-lg-3">
+					<input type="date" class="form-control" name="birthdate" id="inputName" placeholder="Enter birthdate" value='<[val::filler value="user" field="birth_date" library="table_filler"]>' required>
+					<!--value="2013-01-08"-->
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Email</label>
+				<div class="col-lg-3">
+					<input type="email" class="form-control" name="email" id="inputName" placeholder="Enter email" value='<[val::filler value="user" field="email" library="table_filler"]>' required >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputComment" class="col-lg-2 control-label">Username</label>
+				<div class="col-lg-3">
+					<input type="text" class="form-control" name="username" id="inputName" placeholder="Choose an username" value='<[val::filler value="user" field="username" library="table_filler"]>'  required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputComment" class="col-lg-2 control-label">Password</label>
+				<div class="col-lg-3">
+					<input type="password" pattern=".{5,}" title="5 characters minimum" class="form-control"  name="password" id="inputName" placeholder="Choose a password"  required value='<[val::filler value="user" field="password" library="table_filler"]>' <[dis]> >
+
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-offset-2 col-lg-10">
+					<button type="submit" class="btn btn-info">
+						<[button]>
+					</button>
+					<button type="reset" class="btn btn-default">
+						Reset
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,89 @@
+<div class="awidget">
+
+	<div class="awidget-head">
+
+	</div>
+	<div class="awidget-body">
+		<!-- Page title -->
+
+		<br />
+		<form class="form-horizontal" role="form" action="<[action]>" method="post" autocomplete="off">
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">ID</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control"  name="id"   readOnly="true" placeholder="Id will be automatically assigned" value="<[val::filler value="item" field="id" library="table_filler"]>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Name</label>
+				<div class="col-lg-6">
+					<input type="text" class="form-control" name="name" required value='<[val::filler value="item" field="name" library="table_filler"]>' placeholder="product name"   >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputComment" class="col-lg-2 control-label">Description</label>
+				<div class="col-lg-6">
+					<textarea class="form-control" rows="3"   name="desc" required placeholder="Describe the product" ><[val::filler value="item" field="description" library="table_filler"]></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="dropdown"  class="col-lg-2 control-label">Brand</label >
+				<div class="col-lg-3">
+					<select required name="brand" class="form-control">
+						<[options::give_me_brands  library="admin_table"]>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="dropdown" class="col-lg-2 control-label">Furnisher</label>
+				<div class="col-lg-3">
+					<select required name="furnisher"class="form-control">
+						<[options::give_me_furnishers library="admin_table"]>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="dropdown" class="col-lg-2 control-label">Category</label>
+				<div class="col-lg-3">
+					<select required name="category"class="form-control">
+						<[options::give_me_categories library="admin_table"]>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-lg-2 control-label">Target</label>
+				<div class="col-lg-10">
+					<div class="radio">
+						<label>
+							<input type="radio" required name="sex" id="optionsRadios1" value="M" <[val::filler value="item" field="sex" gender="M" library="table_filler"]> >
+							Male </label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="sex" id="optionsRadios2" value="F"  <[val::filler value="item" field="sex"gender="F"  library="table_filler"]> >
+							Female </label>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Price</label>
+				<div class="col-lg-2">
+					<input type="number" min="0" step=0.01 class="form-control" name="price" required  placeholder="Price" value=<[val::filler value="item" field="price" library="table_filler"]> >
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-lg-offset-2 col-lg-10">
+					<button type="submit" class="btn btn-info">
+						<[button]>
+					</button>
+					<button type="reset" class="btn btn-default">
+						Reset
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

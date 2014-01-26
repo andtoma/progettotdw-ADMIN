@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Title here -->
+		<title>Login</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600italic,600' rel='stylesheet' type='text/css'>
+
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="skins/login/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Animate css -->
+		<link href="skins/login/css/animate.min.css" rel="stylesheet">
+		<!-- Gritter -->
+		<link href="skins/login/css/jquery.gritter.css" rel="stylesheet">
+		<!-- Calendar -->
+		<link href="skins/login/css/fullcalendar.css" rel="stylesheet">
+		<!-- Bootstrap toggable -->
+		<link href="skins/login/css/bootstrap-switch.css" rel="stylesheet">
+		<!-- Date and Time picker -->
+		<link href="skins/login/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<!-- Star rating -->
+		<link href="skins/login/css/rateit.css" rel="stylesheet">
+		<!-- Star rating -->
+		<link href="skins/login/css/jquery.cleditor.css" rel="stylesheet">
+		<!-- jQuery UI -->
+		<link href="skins/login/css/jquery-ui.css" rel="stylesheet">
+		<!-- prettyPhoto -->
+		<link href="skins/login/css/prettyPhoto.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="skins/login/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="skins/login/css/style.css" rel="stylesheet">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+<!-- Place this in the body of the page content -->
+
+	</head>
+
+	<body>
+<!-- Logo & Navigation starts -->
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Logo -->
+						<div class="logo text-center">
+							<h1><a href="admin.php">Admin</a></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logo & Navigation ends -->
+
+		<!-- Page content -->
+
+		<div class="page-content blocky">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="awidget login-reg">
+							<div class="awidget-head">
+
+								<div class="awidget-body">
+									<!-- Page title -->
+									<div class="page-title text-center">
+										<h2>Login</h2>
+
+										<hr />
+
+									</div>
+									<!-- Page title -->
+
+								</div>
+
+								<div class="admin-login-error">
+									<[message::print_error library="admin_error"]>
+								</div>
+								<br/>
+
+								<form class="form-horizontal" role="form" method="post" autocomplete="off">
+									<div class="form-group">
+										<label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+										<div class="col-lg-8">
+											<input type="email" class="form-control" name="email" id="inputEmail1" placeholder="Email" required>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword1" class="col-lg-2 control-label ">Password</label>
+										<div class="col-lg-8">
+											<input type="password"  class="form-control" name="password" id="inputPassword1" placeholder="Password" required>
+										</div>
+									</div>
+									<hr />
+									<div class="form-group">
+										<div class="col-lg-offset-2 col-lg-10">
+											<button type="submit" class="btn btn-info">
+												Sign in
+											</button>
+											<button type="reset" class="btn btn-default">
+												Reset
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br/>
+		<br/>
+		
+		
+		<!-- Footer starts -->
+		<footer>
+				<div class="copy text-center">
+					&copy; Progetto Tecnologie Del Web - <a href="https://github.com/andtoma/progettotdw-ADMIN">Git Repository</a>
+					<div class="social">
+						<a href="https://github.com/andtoma/progettotdw-ADMIN" class="github"><i class="icon-github"></i></a>
+					</div>
+				</div>
+
+		</footer>
+		<!-- Footer ends -->
+
+		<!-- Javascript files -->
+		<!-- jQuery -->
+	<!-- jQuery -->
+		<script src="skins/login/js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="skins/login/js/bootstrap.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="skins/login/js/jquery-ui.custom.min.js"></script>
+		<!-- jQuery Peity -->
+		<script src="skins/login/js/peity.js"></script>
+		<!-- Calendar -->
+		<script src="skins/login/js/fullcalendar.min.js"></script>
+		<script src="skins/login/js/gcal.js"></script>
+		<!-- jQuery Star rating -->
+		<script src="skins/login/js/jquery.rateit.min.js"></script>
+		<!-- prettyPhoto -->
+		<script src="skins/login/js/jquery.prettyPhoto.js"></script>
+		<!-- it contains the ajax calls  -->
+		<script src="skins/login/js/ajaxFunc.js"></script><!-- <---------------AJAX HERE-->
+
+		<!-- jQuery flot -->
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="skins/login/js/excanvas.min.js"></script><![endif]-->
+		<script src="skins/login/js/jquery.flot.js"></script>
+		<script src="skins/login/js/jquery.flot.pie.js"></script>
+		<script src="skins/login/js/jquery.flot.stack.js"></script>
+		<script src="skins/login/js/jquery.flot.resize.js"></script>
+		<script src="skins/login/js/bootstrap-formhelpers.js"></script>
+
+
+		<!-- Gritter plugin -->
+		<script src="skins/login/js/jquery.gritter.min.js"></script>
+		<!-- CLEditor -->
+		<script src="skins/login/js/jquery.cleditor.min.js"></script>
+		<!-- Date and Time picker -->
+		<script src="skins/login/js/bootstrap-datetimepicker.min.js"></script>
+		<!-- jQuery Toggable -->
+		<script src="skins/login/js/bootstrap-switch.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="skins/login/js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="skins/login/js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="skins/login/js/custom.js"></script>
+
+	</body>
+</html>

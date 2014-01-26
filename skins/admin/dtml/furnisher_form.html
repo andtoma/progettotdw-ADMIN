@@ -1,0 +1,61 @@
+<div class="awidget">
+
+	<div class="awidget-head">
+
+	</div>
+	<div class="awidget-body">
+		<!-- Page title -->
+
+		<br />
+		<form class="form-horizontal" role="form" action="<[action]>" method="post" autocomplete="off">
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">ID</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control"  name="id" value='<[val::filler value="furnisher" field="id" library="table_filler"]>' readOnly="true" placeholder="Id will be automatically assigned">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Name</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control" name="name" value='<[val::filler value="furnisher" field="name" library="table_filler"]>' placeholder="furnisher name"   >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">VAT no.</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control" name="vat" value='<[val::filler value="furnisher" field="vat_no" library="table_filler"]>' placeholder="vat number"   >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Phone 1</label>
+				<div class="col-lg-5">
+					<input type="text" class="form-control" name="phone1" value='<[val::filler value="furnisher" field="phone1" library="table_filler"]>' placeholder="phone number 1"   >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Phone 2</label>
+				<div class="col-lg-5">
+					<input type="text" class="form-control" name="phone2" value='<[val::filler value="furnisher" field="phone2" library="table_filler"]>' placeholder="phone number 2  (optional)"   >
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputName" class="col-lg-2 control-label">Email</label>
+				<div class="col-lg-5">
+					<input type="email" class="form-control" name="email" id="inputName" placeholder="email address of furnisher" value='<[val::filler value="furnisher" field="email" library="table_filler"]>' >
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-lg-offset-2 col-lg-10">
+					<button type="submit" class="btn btn-info">
+						<[button]>
+					</button>
+					<button type="reset" class="btn btn-default">
+						Reset
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
