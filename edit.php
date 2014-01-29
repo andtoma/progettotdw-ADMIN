@@ -1,4 +1,4 @@
-<?
+<?php
 /********************************************PLEASE NOTE****************************************************
  the edit is performed in 2 phases, in the first will be load  the form precompiled,
  in the secondthe edit takes place
