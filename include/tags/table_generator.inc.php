@@ -116,7 +116,7 @@ Class table_generator extends taglibrary {
 					$table .= "<td>" . $value['id'] . "</td>";
 					$table .= "<td>" . $value['title'] . "</td>";
 					$table .= "<td>" . $value['description'] . "</td>";
-					$table .= "<td><img src=" . $path . "  width='100' height='50'</td>";
+					$table .= "<td><img src=" . $path . "  width='80' height='50'</td>";
 					$table .= "<td> <form action=" . $data['actionEdit'] . " method='post'><button name='id' value=" . $value['id'] . " class='btn btn-xs btn-warning'><i class='icon-pencil' ></i></button></form></td>";
 					$table .= "<td><form action=" . $data['actionDelete'] . " method='post'><button name='id' value=" . $value['id'] . " class='btn btn-xs btn-danger'><i class='icon-remove' ></i></button></form></td>";
 					$table .= "</tr>";
@@ -134,7 +134,7 @@ Class table_generator extends taglibrary {
 					$table .= "<tr>";
 					$table .= "<td>" . $value['name'] . "</td>";
 					$table .= "<td>" . $value['colour'] . "</td>";
-					$table .= "<td><img src={$path} width='100' height='50'</td>";
+					$table .= "<td><img src={$path} width='80' height='50'</td>";
 					$table .= "<td> <form action=" . $data['actionEdit'] . " method='post'><button name='id' value=" . $value['id'] . " class='btn btn-xs btn-warning'><i class='icon-pencil' ></i></button></form></td>";
 					$table .= "<td> <form action=" . $data['actionDelete'] . " method='post'><button name='id' value=" . $value['id'] . " class='btn btn-xs btn-danger'><i class='icon-remove' ></i></button></form></td>";
 					$table .= "</tr>";

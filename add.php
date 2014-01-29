@@ -1,6 +1,5 @@
 <?
 
-
 require_once "include/template2.inc.php";
 require_once "include/dbms.inc.php";
 require_once "include/image_upload.inc.php";
@@ -8,9 +7,8 @@ require_once "include/admin_auth.inc.php";
 
 session_start();
 
-
 /*if it's passed more than 30minutes since last action OR who access this page is not in session, redirect*/
-if (auto_logout("adminLastAction") || !isset($_SESSION['admin'] )) {
+if (auto_logout("adminLastAction") || !isset($_SESSION['admin'])) {
 	session_unset();
 	session_destroy();
 	header('Location:admin.php');
@@ -68,8 +66,6 @@ switch($_GET["id"]) {
 				break;
 			case 'never' :
 				$expiration = date("Y-m-d", strtotime($date . "+ 100 years"));
-				//bug to fix
-				//hoping that life expectancy will not grow too much
 				break;
 		}
 		$oid = mysql_query("insert into ban(reason, expiration,user) values('{$_POST['reason']}','{$expiration}','{$_POST['user']}')") or die(mysql_error());
@@ -98,10 +94,10 @@ switch($_GET["id"]) {
 		break;
 	case 7 :
 		/**************************ADD ITEM IMAGE*************************************************/
-		$res = upload("/skins/BeClothing/img/items/");
+		$res = upload("/skins/BeClothing/img/photos/");
 		if ($res) {
 			$main = new Skin("admin");
-			$main -> setContent("title", "Add a slideshow image");
+			$main -> setContent("title", "Add an item picture");
 			$form = new Skinlet("product_image_form");
 			$form -> setContent("message", $res);
 			$form -> setContent("info", "(only jpg, size limit is 1 Mb)");
@@ -111,9 +107,9 @@ switch($_GET["id"]) {
 			$main -> setContent("content", $form -> get());
 			$main -> close();
 		} else {
-			$path = "skins/BeClothing/img/items/" . $_FILES["uploaded_file"]["name"];
+			$path = "skins/BeClothing/img/photos/" . $_FILES["uploaded_file"]["name"];
 			$oid = mysql_query("insert into items_images(path, colour, item) values('{$path}','{$_POST['colour']}','{$_POST['item']}')") or die(mysql_error());
-			//$oid2 = mysql_query("insert into admin_actions(username,action,involved_table,datetime) values('{$_SESSION['admin']['username']}','add','items_images','{$time}')") or die(mysql_error());
+			$oid2 = mysql_query("insert into admin_actions(username,action,involved_table,datetime) values('{$_SESSION['admin']['username']}','add','items_images','{$time}')") or die(mysql_error());
 			header('Location:admin.php?sel=3&op=4');
 		}
 		break;
